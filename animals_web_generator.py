@@ -18,5 +18,5 @@ def animal_details():
         print (f"Type: {animal_type}")
         print (f"First Location: {first_location}")
         print (f"Diet: {animal_diet}")
-        print("-----")
+        print("--------")
 animal_details()
