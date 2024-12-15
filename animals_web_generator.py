@@ -16,13 +16,16 @@ def animal_details():
         animal_type = characteristics.get("type")
         animal_diet = characteristics.get("diet")
         first_location = animal.get("locations")[0]
-        output += '<li class="cards__item">'
-        output += f"Name: {animal_name}<br/>"
-        output += f"Type: {animal_type}<br/>"
-        output += f"First Location: {first_location}<br/>"
-        output += f"Diet: {animal_diet}<br/>"
-        output += f"\n"
+        output += '<li class="cards__item">\n'
+        output += f'<div class="card__title">{animal_name}</div>\n'
+        output += f'<p class="card__text">\n'
+        output += f'<strong>Diet:</strong> {animal_diet}<br/>\n'
+        output += f'<strong>Location:</strong> {first_location}<br/>\n'
+        output += f'<strong>Type:</strong> {animal_type}<br/>\n'
+        output += '</p>'
+        output += '</li>'
     return output
+
 
 def replace_data_in_html (data):
     # Open the HTML file
