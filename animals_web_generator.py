@@ -16,10 +16,11 @@ def animal_details():
         animal_type = characteristics.get("type")
         animal_diet = characteristics.get("diet")
         first_location = animal.get("locations")[0]
-        output += f"Name: {animal_name}\n"
-        output += f"Type: {animal_type}\n"
-        output += f"First Location: {first_location}\n"
-        output += f"Diet: {animal_diet}\n"
+        output += '<li class="cards__item">'
+        output += f"Name: {animal_name}<br/>"
+        output += f"Type: {animal_type}<br/>"
+        output += f"First Location: {first_location}<br/>"
+        output += f"Diet: {animal_diet}<br/>"
         output += f"\n"
     return output
 
